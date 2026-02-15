@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Le Terrier · Ambiance & Coulisses</title>
+  <meta name="description" content="Plongez dans l'ambiance du Terrier en images. Cocktails signatures, tapas du Sud, décor Art Déco et soirées intimistes.">
+  <meta property="og:title" content="Galerie â€” Le Terrier · Ambiance &amp; Coulisses">
+  <meta property="og:description" content="Plongez dans l'ambiance du Terrier en images. Cocktails, tapas, décor Art Déco.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="announce" role="banner">
+    Ouverture prochaine — Restez connectés pour la date officielle
+    <button class="announce__close" aria-label="Fermer">&times;</button>
+  </div>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Le Terrier</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Accueil</a></li>
+          <li><a href="concept.html" class="nav__link">Le Concept</a></li>
+          <li><a href="carte.html" class="nav__link">Notre Carte</a></li>
+          <li><a href="evenements.html" class="nav__link">Événements</a></li>
+          <li><a href="galerie.html" class="nav__link active">Galerie</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <canvas id="atmosphere" class="canvas-atmo"></canvas>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero__sur">En images</p>
+      <h1 class="page-hero__title">Galerie</h1>
+      <p class="page-hero__sub">L'ambiance du repaire, en attendant d'y être</p>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+
+      <!--
+        AJOUTER VOS PHOTOS :
+        Remplacer les div.gallery-item par :
+        <div class="gallery-item" data-src="images/photo.jpg" data-caption="Description">
+          <img src="images/photo.jpg" alt="Description" loading="lazy">
+        </div>
+      -->
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal"><span class="gallery-item__ph">Cocktail Signature</span></div>
+        <div class="gallery-item reveal reveal-d1"><span class="gallery-item__ph">Ambiance Tamisée</span></div>
+        <div class="gallery-item reveal reveal-d2"><span class="gallery-item__ph">Tapas du Marché</span></div>
+        <div class="gallery-item reveal"><span class="gallery-item__ph">Détail Décor</span></div>
+        <div class="gallery-item reveal reveal-d1"><span class="gallery-item__ph">Bar & Comptoir</span></div>
+        <div class="gallery-item reveal reveal-d2"><span class="gallery-item__ph">Planche Ibérique</span></div>
+        <div class="gallery-item reveal"><span class="gallery-item__ph">Préparation</span></div>
+        <div class="gallery-item reveal reveal-d1"><span class="gallery-item__ph">Soirée Jazz</span></div>
+        <div class="gallery-item reveal reveal-d2"><span class="gallery-item__ph">Terroir du Sud</span></div>
+        <div class="gallery-item reveal"><span class="gallery-item__ph">Lumière Chaude</span></div>
+        <div class="gallery-item reveal reveal-d1"><span class="gallery-item__ph">Coulisses</span></div>
+        <div class="gallery-item reveal reveal-d2"><span class="gallery-item__ph">Le Repaire</span></div>
+      </div>
+
+      <!-- CTA INSTAGRAM — remplacer # par votre lien -->
+      <div class="gallery-cta reveal">
+        <p class="gallery-cta__text">Plus de photos sur notre Instagram</p>
+        <a href="#" class="btn" target="_blank" rel="noopener">Suivez-nous</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" role="dialog" aria-label="Photo en grand" aria-hidden="true" aria-modal="true">
+    <button class="lightbox__close" aria-label="Fermer">&times;</button>
+    <img class="lightbox__img" src="" alt="">
+    <p class="lightbox__cap"></p>
+  </div>
+
+  <a href="contact.html" class="float-cta">Réserver</a>
+
+  <footer class="footer">
+    <p class="footer__logo">Le Terrier</p>
+    <p class="footer__tag">Bar à Cocktails & Tapas — Speakeasy Méditerranéen</p>
+    <nav class="footer__links">
+      <a href="carte.html" class="footer__link">La Carte</a>
+      <a href="concept.html" class="footer__link">Le Concept</a>
+      <a href="evenements.html" class="footer__link">Événements</a>
+      <a href="contact.html" class="footer__link">Contact</a>
+      <a href="#" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+      <a href="mentions-legales.html" class="footer__link">Mentions Légales</a>
+      <a href="politique-confidentialite.html" class="footer__link">Confidentialité</a>
+    </nav>
+    <p class="footer__legal">© 2026 Le Terrier — Tous droits réservés<br><span class="footer__credit">Créé avec l'Amour et passion pour Franck et Bastien · By bab</span></p>
+  </footer>
+
+  <script src="shared.js"></script>
+
+  <!-- COOKIE CONSENT -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consentement cookies">
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text">Ce site utilise des cookies pour améliorer votre expérience. En continuant, vous acceptez notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
+      <div class="cookie-banner__actions">
+        <button class="btn cookie-banner__accept" id="cookie-accept">Accepter</button>
+        <button class="cookie-banner__refuse" id="cookie-refuse">Refuser</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

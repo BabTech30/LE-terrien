@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Événements — Le Terrier · Soirées & Privatisations</title>
+  <meta name="description" content="Soirées jazz, dégustations, DJ sets et privatisations au Terrier. Découvrez notre programmation et réservez votre soirée près de Nîmes.">
+  <meta property="og:title" content="Événements â€” Le Terrier · Soirées &amp; Privatisations">
+  <meta property="og:description" content="Soirées jazz, dégustations, DJ sets et privatisations au Terrier près de Nîmes.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="announce" role="banner">
+    Ouverture prochaine — Restez connectés pour la date officielle
+    <button class="announce__close" aria-label="Fermer">&times;</button>
+  </div>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Le Terrier</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Accueil</a></li>
+          <li><a href="concept.html" class="nav__link">Le Concept</a></li>
+          <li><a href="carte.html" class="nav__link">Notre Carte</a></li>
+          <li><a href="evenements.html" class="nav__link active">Événements</a></li>
+          <li><a href="galerie.html" class="nav__link">Galerie</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <canvas id="atmosphere" class="canvas-atmo"></canvas>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero__sur">Au programme</p>
+      <h1 class="page-hero__title">Événements</h1>
+      <p class="page-hero__sub">Chaque soirée au Terrier a sa propre saveur</p>
+    </div>
+  </section>
+
+  <!-- PROGRAMMATION — modifier les événements ici -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="stitle reveal">
+        <p class="stitle__sur">À venir</p>
+        <h2 class="stitle__main">Programmation</h2>
+        <span class="gold-sep"></span>
+      </div>
+
+      <div class="events-list">
+        <!-- ÉVÉNEMENT 1 -->
+        <div class="event reveal">
+          <div class="event__date">
+            <span class="event__day">15</span>
+            <span class="event__month">Mars</span>
+          </div>
+          <div class="event__info">
+            <p class="event__tag">Soirée d'ouverture</p>
+            <h3 class="event__title">Inauguration du Terrier</h3>
+            <p class="event__text">Le repaire ouvre enfin ses portes. Cocktail de bienvenue offert, carte complète, musique live. Sur réservation.</p>
+          </div>
+        </div>
+
+        <!-- ÉVÉNEMENT 2 -->
+        <div class="event reveal">
+          <div class="event__date">
+            <span class="event__day">22</span>
+            <span class="event__month">Mars</span>
+          </div>
+          <div class="event__info">
+            <p class="event__tag">Jazz</p>
+            <h3 class="event__title">Jazz au Terrier — Trio acoustique</h3>
+            <p class="event__text">Premier jeudi jazz. Guitare, contrebasse et voix. Ambiance feutrée, cocktails signatures. Entrée libre.</p>
+          </div>
+        </div>
+
+        <!-- ÉVÉNEMENT 3 -->
+        <div class="event reveal">
+          <div class="event__date">
+            <span class="event__day">29</span>
+            <span class="event__month">Mars</span>
+          </div>
+          <div class="event__info">
+            <p class="event__tag">Dégustation</p>
+            <h3 class="event__title">Les Vins du Languedoc</h3>
+            <p class="event__text">Dégustation commentée de 5 cuvées locales, accompagnée de tapas assorties. Places limitées, réservation conseillée.</p>
+          </div>
+        </div>
+
+        <!-- ÉVÉNEMENT 4 -->
+        <div class="event reveal">
+          <div class="event__date">
+            <span class="event__day">05</span>
+            <span class="event__month">Avr</span>
+          </div>
+          <div class="event__info">
+            <p class="event__tag">DJ Set</p>
+            <h3 class="event__title">Nuit Fauve — DJ set lounge</h3>
+            <p class="event__text">Deep house & nu-disco jusqu'à minuit. Cocktails spéciaux de la soirée. Le samedi prend une autre dimension.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RENDEZ-VOUS RÉGULIERS -->
+  <section class="section-pad bg-accent">
+    <div class="container">
+      <div class="stitle reveal">
+        <p class="stitle__sur">Chaque semaine</p>
+        <h2 class="stitle__main">Nos Rendez-vous</h2>
+        <span class="gold-sep"></span>
+      </div>
+      <div class="recur-grid">
+        <div class="recur reveal reveal-d1">
+          <p class="recur__day">Les Jeudis</p>
+          <h3 class="recur__title">Jazz au Terrier</h3>
+          <p class="recur__text">Musique live acoustique, ambiance feutrée. Le jazz comme on l'aime — intime et vibrant.</p>
+        </div>
+        <div class="recur reveal reveal-d2">
+          <p class="recur__day">Les Vendredis</p>
+          <h3 class="recur__title">Vendredis Vins</h3>
+          <p class="recur__text">Cuvée de la semaine mise à l'honneur, accord tapas-vin. Le rendez-vous des curieux.</p>
+        </div>
+        <div class="recur reveal reveal-d3">
+          <p class="recur__day">Les Samedis</p>
+          <h3 class="recur__title">DJ Lounge</h3>
+          <p class="recur__text">Sélections musicales soignées — deep house, nu-disco, world. Le samedi monte d'un cran.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVATISATION -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="privat reveal">
+        <h2 class="privat__title">Privatisation</h2>
+        <p class="privat__text">Le Terrier se transforme en votre repaire privé. Jusqu'à 60 personnes, on s'adapte à votre événement.</p>
+        <div class="privat__list">
+          <span class="privat__tag">Jusqu'à 60 personnes</span>
+          <span class="privat__tag">Menu sur mesure</span>
+          <span class="privat__tag">Cocktails personnalisés</span>
+          <span class="privat__tag">DJ / Live</span>
+          <span class="privat__tag">Décor adaptable</span>
+        </div>
+        <a href="contact.html" class="btn btn--filled">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <a href="contact.html" class="float-cta">Réserver</a>
+
+  <footer class="footer">
+    <p class="footer__logo">Le Terrier</p>
+    <p class="footer__tag">Bar à Cocktails & Tapas — Speakeasy Méditerranéen</p>
+    <nav class="footer__links">
+      <a href="carte.html" class="footer__link">La Carte</a>
+      <a href="concept.html" class="footer__link">Le Concept</a>
+      <a href="evenements.html" class="footer__link">Événements</a>
+      <a href="contact.html" class="footer__link">Contact</a>
+      <a href="#" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+      <a href="mentions-legales.html" class="footer__link">Mentions Légales</a>
+      <a href="politique-confidentialite.html" class="footer__link">Confidentialité</a>
+    </nav>
+    <p class="footer__legal">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.<br>© 2026 Le Terrier — Tous droits réservés<br><span class="footer__credit">Créé avec l\'Amour et passion pour Franck et Bastien · By bab</span></p>
+  </footer>
+
+  <script src="shared.js"></script>
+
+  <!-- COOKIE CONSENT -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consentement cookies">
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text">Ce site utilise des cookies pour améliorer votre expérience. En continuant, vous acceptez notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
+      <div class="cookie-banner__actions">
+        <button class="btn cookie-banner__accept" id="cookie-accept">Accepter</button>
+        <button class="cookie-banner__refuse" id="cookie-refuse">Refuser</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

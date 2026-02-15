@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Terrier — Bar à Cocktails & Tapas · Speakeasy Méditerranéen</title>
+  <meta name="description" content="Le Terrier, bar à cocktails et tapas de style speakeasy méditerranéen près de Nîmes. Cocktails signatures, tapas du Sud, ambiance intimiste. Ouvert du mercredi au dimanche.">
+  <meta property="og:title" content="Le Terrier â€” Bar à Cocktails &amp; Tapas · Speakeasy Méditerranéen">
+  <meta property="og:description" content="Cocktails signatures, tapas du Sud, ambiance intimiste. Ouvert du mercredi au dimanche près de Nîmes.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <!-- <meta property="og:image" content="https://leterrier.bar/images/og-cover.jpg"> -->
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Le Terrier",
+    "description": "Bar à cocktails et tapas de style speakeasy méditerranéen",
+    "url": "https://leterrier.bar",
+    "servesCuisine": ["Tapas", "Cocktails", "Méditerranéen"],
+    "priceRange": "ââ€šÂ¬ââ€šÂ¬",
+    "openingHours": ["We-Su 17:00-00:00"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Codognan",
+      "addressRegion": "Gard",
+      "postalCode": "30920",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- BANDEAU ANNONCE — modifier le texte ici -->
+  <div class="announce" role="banner">
+    Ouverture prochaine — Restez connectés pour la date officielle
+    <button class="announce__close" aria-label="Fermer">&times;</button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Le Terrier</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active">Accueil</a></li>
+          <li><a href="concept.html" class="nav__link">Le Concept</a></li>
+          <li><a href="carte.html" class="nav__link">Notre Carte</a></li>
+          <li><a href="evenements.html" class="nav__link">Événements</a></li>
+          <li><a href="galerie.html" class="nav__link">Galerie</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ATMOSPHERE CANVAS -->
+  <canvas id="atmosphere" class="canvas-atmo"></canvas>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__corner hero__corner--tl"></div>
+    <div class="hero__corner hero__corner--tr"></div>
+    <div class="hero__corner hero__corner--bl"></div>
+    <div class="hero__corner hero__corner--br"></div>
+    <div class="hero__content">
+      <p class="hero__sur">Bar à Cocktails & Tapas</p>
+      <h1 class="hero__title">Le Terrier</h1>
+      <p class="hero__sub">Entrez dans le repaire</p>
+      <a href="carte.html" class="btn">Découvrir la carte</a>
+    </div>
+    <div class="hero__scroll">
+      <span>Découvrir</span>
+      <span>ââ€ â€œ</span>
+    </div>
+  </section>
+
+  <!-- ESPACES TEASER -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="stitle reveal">
+        <p class="stitle__sur">Deux ambiances, un repaire</p>
+        <h2 class="stitle__main">Nos Espaces</h2>
+        <span class="gold-sep"></span>
+      </div>
+      <div class="spaces-teaser">
+        <div class="card reveal reveal-d1">
+          <p class="card__label">Rez-de-chaussée · 25 places</p>
+          <h3 class="card__title">L'Antre</h3>
+          <p class="card__text">Service à table, formules et tapas. L'expérience complète dans un cadre intimiste où chaque détail est pensé pour le partage.</p>
+        </div>
+        <div class="card reveal reveal-d2">
+          <p class="card__label">Étage · 35 places</p>
+          <h3 class="card__title">Le Perchoir</h3>
+          <p class="card__text">Bar et comptoir, cocktails et vins au verre. Plus décontracté, plus spontané — l'endroit où la soirée prend vie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNAL DU TERRIER — modifier les 3 cartes ici -->
+  <section class="section-pad bg-accent">
+    <div class="container">
+      <div class="stitle reveal">
+        <p class="stitle__sur">Les dernières nouvelles</p>
+        <h2 class="stitle__main">Journal du Terrier</h2>
+        <span class="gold-sep"></span>
+      </div>
+      <div class="journal-grid">
+
+        <div class="card reveal reveal-d1">
+          <p class="journal__date">Février 2026</p>
+          <h3 class="card__title">Les travaux avancent</h3>
+          <p class="card__text">Le repaire prend forme. Les murs respirent déjà le bordeaux et l'or. Bientôt, on vous ouvre la porte.</p>
+        </div>
+
+        <div class="card reveal reveal-d2">
+          <p class="journal__date">Février 2026</p>
+          <h3 class="card__title">La carte se dessine</h3>
+          <p class="card__text">Six cocktails signatures, des tapas du marché, des vins de la région. On a pensé chaque détail pour vous.</p>
+        </div>
+
+        <div class="card reveal reveal-d3">
+          <p class="journal__date">Bientôt</p>
+          <h3 class="card__title">Save the date</h3>
+          <p class="card__text">La date d'ouverture arrive. Suivez-nous sur Instagram pour être les premiers à entrer dans le repaire.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AVIS GOOGLE — modifier score, avis et lien ici -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="reviews reveal">
+        <div class="stitle">
+          <p class="stitle__sur">Ce qu'ils en disent</p>
+          <h2 class="stitle__main">Avis Google</h2>
+          <span class="gold-sep"></span>
+        </div>
+        <p class="reviews__stars">★★★★★</p>
+        <p class="reviews__score">5.0 / 5</p>
+        <p class="reviews__count">Basé sur les premiers avis</p>
+        <div class="reviews-grid">
+
+          <div class="review reveal reveal-d1">
+            <p class="review__text">« Un lieu hors du temps. Les cocktails sont impeccables, les tapas fondantes. On se croirait à Barcelone avec le charme du Sud en plus. »</p>
+            <p class="review__author">— Marie L.</p>
+          </div>
+
+          <div class="review reveal reveal-d2">
+            <p class="review__text">« Enfin un bar qui ose la qualité sans casser les prix. Le Terrier signature est devenu mon rituel du vendredi. »</p>
+            <p class="review__author">— Thomas R.</p>
+          </div>
+
+          <div class="review reveal reveal-d3">
+            <p class="review__text">« L'ambiance est incroyable. Lumière tamisée, musique parfaite, service au top. On reviendra c'est certain. »</p>
+            <p class="review__author">— Sophie & Marc</p>
+          </div>
+
+        </div>
+        <!-- LIEN GOOGLE REVIEWS — remplacer # par votre lien Google -->
+        <a href="#" class="btn" target="_blank" rel="noopener">Laisser un avis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-pad text-center">
+    <div class="container reveal">
+      <p class="stitle__sur">On vous attend</p>
+      <h2 class="stitle__main">Prêt à entrer dans le repaire ?</h2>
+      <span class="gold-sep"></span>
+      <p class="cta-text">Mercredi au dimanche, de 17h à minuit. Près de Codognan, à 15 minutes de Nîmes.</p>
+      <a href="contact.html" class="btn btn--filled">Réserver</a>
+    </div>
+  </section>
+
+  <!-- FLOATING CTA -->
+  <a href="contact.html" class="float-cta">Réserver</a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__logo">Le Terrier</p>
+    <p class="footer__tag">Bar à Cocktails & Tapas — Speakeasy Méditerranéen</p>
+    <nav class="footer__links">
+      <a href="carte.html" class="footer__link">La Carte</a>
+      <a href="concept.html" class="footer__link">Le Concept</a>
+      <a href="evenements.html" class="footer__link">Événements</a>
+      <a href="contact.html" class="footer__link">Contact</a>
+      <a href="#" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+      <a href="mentions-legales.html" class="footer__link">Mentions Légales</a>
+      <a href="politique-confidentialite.html" class="footer__link">Confidentialité</a>
+    </nav>
+    <p class="footer__legal">
+      L'abus d'alcool est dangereux pour la santé. À consommer avec modération.<br>
+      © 2026 Le Terrier — Tous droits réservés<br><span class="footer__credit">Créé avec l'Amour et passion pour Franck et Bastien · By bab</span>
+    </p>
+  </footer>
+
+  <script src="shared.js"></script>
+
+  <!-- COOKIE CONSENT -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consentement cookies">
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text">Ce site utilise des cookies pour améliorer votre expérience. En continuant, vous acceptez notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
+      <div class="cookie-banner__actions">
+        <button class="btn cookie-banner__accept" id="cookie-accept">Accepter</button>
+        <button class="cookie-banner__refuse" id="cookie-refuse">Refuser</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

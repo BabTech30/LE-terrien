@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Réservation — Le Terrier · Bar Cocktails près de Nîmes</title>
+  <meta name="description" content="Réservez votre table au Terrier. Ouvert du mercredi au dimanche, 17h-00h. Près de Codognan, à 15 minutes de Nîmes. Contactez-nous par téléphone ou Instagram.">
+  <meta property="og:title" content="Contact &amp; Réservation â€” Le Terrier">
+  <meta property="og:description" content="Réservez votre table au Terrier. Ouvert du mercredi au dimanche, 17h-00h. Près de Nîmes.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="announce" role="banner">
+    Ouverture prochaine — Restez connectés pour la date officielle
+    <button class="announce__close" aria-label="Fermer">&times;</button>
+  </div>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Le Terrier</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Accueil</a></li>
+          <li><a href="concept.html" class="nav__link">Le Concept</a></li>
+          <li><a href="carte.html" class="nav__link">Notre Carte</a></li>
+          <li><a href="evenements.html" class="nav__link">Événements</a></li>
+          <li><a href="galerie.html" class="nav__link">Galerie</a></li>
+          <li><a href="contact.html" class="nav__link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <canvas id="atmosphere" class="canvas-atmo"></canvas>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero__sur">On vous attend</p>
+      <h1 class="page-hero__title">Contact & Réservation</h1>
+      <p class="page-hero__sub">Mercredi au dimanche, de 17h à minuit</p>
+    </div>
+  </section>
+
+  <!-- CONTACT + FORMULAIRE -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- INFOS -->
+        <div>
+          <div class="contact-block reveal">
+            <p class="contact-block__title">Horaires</p>
+            <p class="contact-block__text">
+              Mercredi — Dimanche<br>
+              17h00 — 00h00<br>
+              <span class="contact-block__note">Fermé lundi & mardi</span>
+            </p>
+          </div>
+
+          <div class="contact-block reveal">
+            <p class="contact-block__title">Adresse</p>
+            <p class="contact-block__text">
+              Proche Codognan<br>
+              30920 — Gard<br>
+              <span class="contact-block__note">À 15 min de Nîmes</span>
+            </p>
+          </div>
+
+          <div class="contact-block reveal">
+            <p class="contact-block__title">Nous suivre</p>
+            <p class="contact-block__text">
+              <!-- INSTAGRAM — remplacer # -->
+              <a href="#">Instagram @leterrier.bar</a>
+            </p>
+          </div>
+
+          <!-- MAP — remplacer par votre iframe Google Maps -->
+          <div class="map-wrapper reveal">
+            <div class="map-placeholder">
+              Google Maps · À intégrer
+            </div>
+            <!--
+              <iframe src="https://www.google.com/maps/embed?pb=VOTRE_EMBED_URL" allowfullscreen loading="lazy"></iframe>
+            -->
+          </div>
+        </div>
+
+        <!-- FORMULAIRE -->
+        <div>
+          <div class="stitle stitle--left reveal">
+            <p class="stitle__sur">Réservation</p>
+            <h2 class="stitle__main stitle__main--sm">Réserver une table</h2>
+            <span class="gold-sep gold-sep--left"></span>
+          </div>
+
+          <!-- ACTION — remplacer par Formspree/Netlify -->
+          <form class="form reveal" data-form>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Nom</label>
+                <input class="form__input" type="text" id="name" name="name" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="phone">Téléphone</label>
+                <input class="form__input" type="tel" id="phone" name="phone">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="type">Type</label>
+                <select class="form__select" id="type" name="type">
+                  <option value="reservation">Réservation</option>
+                  <option value="privatisation">Privatisation</option>
+                  <option value="info">Renseignement</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="date">Date souhaitée</label>
+                <input class="form__input" type="date" id="date" name="date">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="guests">Nombre de personnes</label>
+                <select class="form__select" id="guests" name="guests">
+                  <option value="2">2 personnes</option>
+                  <option value="3">3 personnes</option>
+                  <option value="4">4 personnes</option>
+                  <option value="5">5 personnes</option>
+                  <option value="6">6 personnes</option>
+                  <option value="7+">7 et plus</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="espace">Espace préféré</label>
+              <select class="form__select" id="espace" name="espace">
+                <option value="indifferent">Indifférent</option>
+                <option value="rdc">Rez-de-chaussée (L'Antre)</option>
+                <option value="etage">Étage (Le Perchoir)</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Message (optionnel)</label>
+              <textarea class="form__textarea" id="message" name="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn--filled btn--start">Envoyer</button>
+          </form>
+
+          <div class="form__success">
+            <p class="stitle__sur">Merci !</p>
+            <h3 class="stitle__main stitle__main--sm">Demande envoyée</h3>
+            <p class="card__text">Nous revenons vers vous très vite. À bientôt au repaire.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-pad bg-accent">
+    <div class="container">
+      <div class="stitle reveal">
+        <p class="stitle__sur">Vos questions</p>
+        <h2 class="stitle__main">FAQ</h2>
+        <span class="gold-sep"></span>
+      </div>
+      <div class="faq reveal">
+
+        <div class="faq__item">
+          <button class="faq__q">La réservation est-elle obligatoire ?<span class="faq__icon">+</span></button>
+          <div class="faq__a">Recommandée mais pas obligatoire. Le week-end, on conseille fortement de réserver pour garantir votre table, surtout au rez-de-chaussée.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">Y a-t-il un parking ?<span class="faq__icon">+</span></button>
+          <div class="faq__a">Oui, parking gratuit à proximité immédiate. L'avantage du semi-rural — pas de galère pour se garer.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">Le lieu est-il accessible PMR ?<span class="faq__icon">+</span></button>
+          <div class="faq__a">Le rez-de-chaussée est accessible aux personnes à mobilité réduite. L'étage est accessible par escalier uniquement.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">Les animaux sont-ils acceptés ?<span class="faq__icon">+</span></button>
+          <div class="faq__a">Les chiens calmes sont les bienvenus en salle. On leur prévoit même un bol d'eau.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">Peut-on venir en groupe ?<span class="faq__icon">+</span></button>
+          <div class="faq__a">Bien sûr. Pour les groupes de plus de 8 personnes, contactez-nous pour organiser au mieux votre soirée. Privatisation possible jusqu'à 60 personnes.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">Y a-t-il des options végétariennes ?<span class="faq__icon">+</span></button>
+          <div class="faq__a">Oui : burrata, champignons à la plancha, Åâ€œuf parfait, verrines gaspacho, olives, fromages affinés. La carte est pensée pour que chacun y trouve son bonheur.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">Quels moyens de paiement acceptez-vous ?<span class="faq__icon">+</span></button>
+          <div class="faq__a">Carte bancaire et espèces. Pas de chèques.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__logo">Le Terrier</p>
+    <p class="footer__tag">Bar à Cocktails & Tapas — Speakeasy Méditerranéen</p>
+    <nav class="footer__links">
+      <a href="carte.html" class="footer__link">La Carte</a>
+      <a href="concept.html" class="footer__link">Le Concept</a>
+      <a href="evenements.html" class="footer__link">Événements</a>
+      <a href="contact.html" class="footer__link">Contact</a>
+      <a href="#" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+      <a href="mentions-legales.html" class="footer__link">Mentions Légales</a>
+      <a href="politique-confidentialite.html" class="footer__link">Confidentialité</a>
+    </nav>
+    <p class="footer__legal">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.<br>© 2026 Le Terrier — Tous droits réservés<br><span class="footer__credit">Créé avec l\'Amour et passion pour Franck et Bastien · By bab</span></p>
+  </footer>
+
+  <script src="shared.js"></script>
+
+  <!-- COOKIE CONSENT -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consentement cookies">
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text">Ce site utilise des cookies pour améliorer votre expérience. En continuant, vous acceptez notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
+      <div class="cookie-banner__actions">
+        <button class="btn cookie-banner__accept" id="cookie-accept">Accepter</button>
+        <button class="cookie-banner__refuse" id="cookie-refuse">Refuser</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
