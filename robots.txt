@@ -1,0 +1,11 @@
+# Le Terrier — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://leterrier.bar/sitemap.xml
+
+# Bloque les pages techniques éventuelles
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /*.json$
